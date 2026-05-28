@@ -17,7 +17,7 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-    base: '/DennisPortfolio.github.io/', 
+    base: '/Dennis.github.io/', 
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
