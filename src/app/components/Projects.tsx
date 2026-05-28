@@ -8,7 +8,7 @@ const projects = [
     title: 'De ramp van de Phoenix',
     description: 'Unity multiplayer game gebouwd met C# en Unity netcode',
     fullDescription: 'Een game die ik heb ontwikkeld voor een klant, gebaseerd op een historisch moment dat is omgezet in een interactieve spelervaring',
-    image: 'src/assets/RampPhoenix.png',
+    image: 'RampPhoenix.png',
     tags: ['Unity', 'C#', 'Multiplayer', 'Game Development', '3D'],
     github: '',
     demo: ''
@@ -17,7 +17,7 @@ const projects = [
     title: 'Pirate Game',
     description: 'Een 2D microgame spel gemaakt in Unity met C#',
     fullDescription: 'Fast paced 2D microgame waarin de speler de vijand moet aanvallen in een chaotische zee.',
-    image: 'MicroGame',
+    image: 'ProjectMicroGame.png',
     tags: ['Unity', 'C#', '2D', 'Microgame'],
     github: '',
     demo: 'https://youtube.com/shorts/OOVGnj_55Uw'
@@ -26,7 +26,7 @@ const projects = [
     title: 'Fallout of the last worm',
     description: '2D microgame gemaakt in Unity met C#',
     fullDescription: 'In deze 2D microgame speel je als de laatste overgebleven worm op aarde. Je moet overleven in een vijandige wereld vol dieren die je aanvallen. Door vijanden te verslaan verdien je punten en kun je nieuwe, sterkere wormen vrijspelen.',
-    image: 'src/assets/worms.png',
+    image: 'Worms.png',
     tags: ['Unity', '2D', 'Microgame', 'C#'],
     github: '',
     demo: 'https://youtube.com/shorts/d7ows_y_KHw?feature=share'
