@@ -144,7 +144,8 @@ export default function Projects() {
               initial={{ scale: 0.9, y: 50 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 50 }}
-              className="relative max-w-4xl w-full bg-gradient-to-br from-gray-900 to-black border border-white/20 rounded-3xl overflow-hidden shadow-2xl"
+              className=" relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-gray-900 to-black border border-white/20 rounded-2xl md:rounded-3xl shadow-2xl
+"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close button */}
