@@ -6,25 +6,25 @@ const aboutCards = [
   {
     icon: User,
     title: 'Wie ben ik',
-    content: 'Ik ben een gepassioneerde software development student die graag innovatieve oplossingen creëert. Met een sterke focus op web development en game development streef ik ernaar om impactvolle digitale ervaringen te bouwen.',
+    content: 'Ik ben Dennis en ik volg de opleiding Software Development aan het ROC van Twente. Ik vind het leuk om games te creëren en om verschillende soorten software te ontwikkelen. Binnen mijn opleiding werk ik aan het verbeteren van mijn programmeervaardigheden en het bouwen van games.',
     color: 'from-cyan-500 to-blue-600'
   },
   {
     icon: GraduationCap,
     title: 'Mijn opleiding',
-    content: 'Ik volg momenteel de opleiding Software Development waar ik leer over moderne technologieën, design patterns en best practices. Elke dag breid ik mijn kennis uit met nieuwe frameworks en programmeertalen.',
+    content: 'Student aan het ROC van Twente, opleiding Software Development. Binnen deze opleiding ontwikkel ik diverse softwaretoepassingen, met een sterke focus op game development.',
     color: 'from-blue-500 to-purple-600'
   },
   {
     icon: Heart,
     title: 'Mijn interesses',
-    content: 'Naast coderen ben ik geïnteresseerd in game development, UI/UX design en emerging technologies zoals AI en VR. Ik hou ervan om nieuwe tools te verkennen en mijn vaardigheden constant te verbeteren.',
+    content: 'Ik ben geïnteresseerd in game development, met een specifieke focus op multiplayer. Daarnaast vind ik het leuk om creatieve en interactieve websites te bouwen.',
     color: 'from-purple-500 to-pink-600'
   },
   {
     icon: Briefcase,
     title: 'Mijn stage zoektocht',
-    content: 'Ik ben momenteel op zoek naar een uitdagende stage waar ik mijn kennis kan toepassen en kan leren van ervaren developers. Een omgeving waar innovatie en persoonlijke groei centraal staan is ideaal.',
+    content: 'Ik ben op zoek naar een gezellige stageplek waar ik mijn kennis verder kan verbreden en praktijkervaring kan opdoen.',
     color: 'from-pink-500 to-red-600'
   }
 ];

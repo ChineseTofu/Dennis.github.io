@@ -2,33 +2,34 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Github, ExternalLink } from 'lucide-react';
 
+
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'Een moderne webshop gebouwd met React en Node.js',
-    fullDescription: 'Een volledig functionele e-commerce platform met winkelwagen functionaliteit, betaalintegratie en admin dashboard. Gebouwd met moderne technologieën en best practices voor optimale performance en gebruikerservaring.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    github: '#',
-    demo: '#'
+    title: 'De ramp van de Phoenix',
+    description: 'Unity multiplayer game gebouwd met C# en Unity netcode',
+    fullDescription: 'Een game die ik heb ontwikkeld voor een klant, gebaseerd op een historisch moment dat is omgezet in een interactieve spelervaring',
+    image: 'src/assets/RampPhoenix.png',
+    tags: ['Unity', 'C#', 'Multiplayer', 'Game Development', '3D'],
+    github: '',
+    demo: ''
   },
   {
-    title: '3D Game Project',
-    description: 'Een interactieve 3D game ontwikkeld in Unity',
-    fullDescription: 'Een immersieve 3D game ervaring met complexe gameplay mechanics, AI enemies en prachtige visuals. Ontwikkeld met Unity Engine en C#, met focus op performance optimalisatie en player experience.',
-    image: 'https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-    tags: ['Unity', 'C#', 'Blender', '3D'],
-    github: '#',
-    demo: '#'
+    title: 'Pirate Game',
+    description: 'Een 2D microgame spel gemaakt in Unity met C#',
+    fullDescription: 'Fast paced 2D microgame waarin de speler de vijand moet aanvallen in een chaotische zee.',
+    image: 'src/assets/ProjectMicroGame.png',
+    tags: ['Unity', 'C#', '2D', 'Microgame'],
+    github: '',
+    demo: 'https://youtube.com/shorts/OOVGnj_55Uw'
   },
   {
-    title: 'Portfolio Dashboard',
-    description: 'Een analytics dashboard voor portfolio tracking',
-    fullDescription: 'Een geavanceerd dashboard voor het monitoren van portfolio prestaties met real-time data visualisatie, custom metrics en geautomatiseerde rapportages. Gebouwd met moderne frontend frameworks en data visualisatie libraries.',
-    image: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
-    tags: ['React', 'TypeScript', 'Chart.js', 'API'],
-    github: '#',
-    demo: '#'
+    title: 'Fallout of the last worm',
+    description: '2D microgame gemaakt in Unity met C#',
+    fullDescription: 'In deze 2D microgame speel je als de laatste overgebleven worm op aarde. Je moet overleven in een vijandige wereld vol dieren die je aanvallen. Door vijanden te verslaan verdien je punten en kun je nieuwe, sterkere wormen vrijspelen.',
+    image: 'src/assets/worms.png',
+    tags: ['Unity', '2D', 'Microgame', 'C#'],
+    github: '',
+    demo: 'https://youtube.com/shorts/d7ows_y_KHw?feature=share'
   }
 ];
 
@@ -48,7 +49,7 @@ export default function Projects() {
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
             Mijn <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Projecten</span>
           </h2>
-          <p className="text-white/60 text-lg">Enkele van mijn beste werken</p>
+          <p className="text-white/60 text-lg">School projects</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -186,24 +187,28 @@ export default function Projects() {
 
                 {/* Buttons */}
                 <div className="flex gap-4">
-                  <motion.a
-                    href={selectedProject.github}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex-1 flex items-center justify-center gap-2 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl text-white font-medium transition-colors"
-                  >
-                    <Github className="w-5 h-5" />
-                    GitHub
-                  </motion.a>
-                  <motion.a
-                    href={selectedProject.demo}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex-1 flex items-center justify-center gap-2 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl text-white font-medium shadow-lg shadow-cyan-500/30"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                    Live Demo
-                  </motion.a>
+                  {selectedProject.github && (
+                    <motion.a
+                      href={selectedProject.github}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="flex-1 flex items-center justify-center gap-2 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl text-white font-medium transition-colors"
+                    >
+                      <Github className="w-5 h-5" />
+                      GitHub
+                    </motion.a>
+                  )}
+                  {selectedProject.demo && (
+                    <motion.a
+                      href={selectedProject.demo}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="flex-1 flex items-center justify-center gap-2 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl text-white font-medium shadow-lg shadow-cyan-500/30"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                      Live Demo
+                    </motion.a>
+                  )}
                 </div>
               </div>
             </motion.div>

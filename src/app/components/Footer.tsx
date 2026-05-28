@@ -3,11 +3,11 @@ import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub', color: 'hover:text-gray-400' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-400' },
-    { icon: Instagram, href: '#', label: 'Instagram', color: 'hover:text-pink-400' },
-    { icon: Mail, href: 'mailto:contact@example.com', label: 'Email', color: 'hover:text-cyan-400' }
-  ];
+    { icon: Github, href: '', label: 'GitHub', color: 'hover:text-gray-400' },
+    { icon: Linkedin, href: '', label: 'LinkedIn', color: 'hover:text-blue-400' },
+    { icon: Instagram, href: '', label: 'Instagram', color: 'hover:text-pink-400' },
+    { icon: Mail, href: '', label: 'Email', color: 'hover:text-cyan-400' }
+  ].filter(link => link.href);;
 
   return (
     <footer id="contact" className="relative py-20 px-6 overflow-hidden">
@@ -25,7 +25,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4"
           >
-            Software Developer Portfolio
+            Contact
           </motion.h2>
 
           {/* Tagline */}
@@ -36,8 +36,18 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-white/60 text-lg mb-12 max-w-2xl mx-auto"
           >
-            Gepassioneerd door code, gedreven door innovatie. Laten we samen iets geweldigs bouwen.
+            Neem gerust contact met mij op via een van de onderstaande kanalen.
           </motion.p>
+
+          <div className="mb-10">
+            <p className="text-white/60 mb-2">Email me</p>
+            <a
+              href="#"
+              className="text-white text-xl font-semibold hover:text-cyan-400 transition-colors"
+            >
+              dennis29012006@gmail.com
+            </a>
+          </div>
 
           {/* Social Links */}
           <motion.div
@@ -99,7 +109,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-white/40 text-sm"
           >
-            © {new Date().getFullYear()} Software Developer Portfolio. Alle rechten voorbehouden.
+
           </motion.p>
 
           {/* Decorative dots */}

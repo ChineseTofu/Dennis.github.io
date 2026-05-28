@@ -7,7 +7,8 @@ const skills = [
   { name: 'CSS', color: 'from-blue-500 to-blue-700', icon: '🎨' },
   { name: 'Python', color: 'from-yellow-400 to-blue-500', icon: '🐍' },
   { name: 'WordPress', color: 'from-blue-400 to-blue-600', icon: '📝' },
-  { name: 'Git', color: 'from-orange-600 to-red-600', icon: '📦' }
+  { name: 'Git', color: 'from-orange-600 to-red-600', icon: '📦' },
+  { name: 'Flutter', color: 'from-sky-400 to-blue-600', icon: '📱' }
 ];
 
 export default function Skills() {
