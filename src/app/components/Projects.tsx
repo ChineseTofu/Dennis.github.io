@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Github, ExternalLink } from 'lucide-react';
+const image = import.meta.env.BASE_URL + 'RampPhoenix.png';
 
 
 const projects = [
