@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'De ramp van de Phoenix',
     description: 'Unity multiplayer game gebouwd met C# en Unity netcode',
-    fullDescription: 'Een game die ik heb ontwikkeld voor een klant, gebaseerd op een historisch moment dat is omgezet in een interactieve spelervaring',
+    fullDescription: 'Een game die ik met mijn groep heb ontwikkeld voor een klant, gebaseerd op een historisch moment dat is omgezet in een interactieve spelervaring. De speler speelt samen met anderen als bemanningslid op het schip de Phoenix en zorgt ervoor dat alle taken aan boord worden uitgevoerd.',
     image: '/Dennis.github.io/RampPhoenix.png',
     tags: ['Unity', 'C#', 'Multiplayer', 'Game Development', '3D'],
     github: '',
