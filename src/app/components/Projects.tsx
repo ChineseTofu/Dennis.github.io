@@ -23,13 +23,13 @@ const projects = [
     demo: 'https://youtube.com/shorts/OOVGnj_55Uw'
   },
   {
-    title: 'Fallout of the last worm',
-    description: '2D microgame gemaakt in Unity met C#',
-    fullDescription: 'In deze 2D microgame speel je als de laatste overgebleven worm op aarde. Je moet overleven in een vijandige wereld vol dieren die je aanvallen. Door vijanden te verslaan verdien je punten en kun je nieuwe, sterkere wormen vrijspelen.',
-    image: '/Dennis.github.io/Worms.png',
-    tags: ['Unity', '2D', 'Microgame', 'C#'],
+    title: 'France Tour',
+    description: 'Een website dat is gemaakt in HTML en CSS',
+    fullDescription: 'Een website over Frankrijk, waarop verschillende activiteiten worden weergegeven die bezoekers kunnen ondernemen tijdens een verblijf in Frankrijk.',
+    image: '/Dennis.github.io/FranceWebsite.png',
+    tags: ['HTML', 'CSS', 'Javascript'],
     github: '',
-    demo: 'https://youtube.com/shorts/d7ows_y_KHw?feature=share'
+    demo: 'https://chinesetofu.github.io/France-Tour-Website/'
   }
 ];
 

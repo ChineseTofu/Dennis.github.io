@@ -9,8 +9,9 @@ export default function Hero() {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const texts = [
-    'Software Developer & Game Developer',
-    'Software Developer & Game Developer'
+    'Software Developer',
+    'Game Developer',
+    'Web Developer'
   ];
 
   useEffect(() => {
